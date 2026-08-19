@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yifan Wu — CV</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #5a5a5a;
+    --rule: #1a1a1a;
+    --link: #1d4ed8;
+    --accent-bg: #f4f4f2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --text: #e8e8e6;
+      --muted: #a3a3a0;
+      --rule: #e8e8e6;
+      --link: #7fb0ff;
+      --accent-bg: #1d2024;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+  }
+  body {
+    font-family: "Georgia", "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+    line-height: 1.55;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  h1 {
+    font-size: 2.2rem;
+    letter-spacing: 0.04em;
+    margin: 0 0 6px;
+    font-variant: small-caps;
+  }
+  .contact {
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  .contact a { color: var(--link); text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
+  .contact .sep { margin: 0 8px; opacity: 0.5; }
+
+  h2 {
+    font-variant: small-caps;
+    font-size: 1.25rem;
+    letter-spacing: 0.03em;
+    border-bottom: 1.5px solid var(--rule);
+    padding-bottom: 4px;
+    margin: 32px 0 12px;
+  }
+  h2:first-of-type { margin-top: 0; }
+
+  .entry { margin-bottom: 14px; }
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+  }
+  .entry-head .org { font-weight: bold; }
+  .entry-head .when { color: var(--muted); font-size: 0.92rem; white-space: nowrap; }
+  .entry-sub { color: var(--muted); font-size: 0.95rem; margin-top: 1px; }
+  .entry-title { font-weight: bold; margin-top: 6px; }
+
+  ul { margin: 6px 0 0; padding-left: 22px; }
+  li { margin-bottom: 4px; }
+
+  .pub { margin-bottom: 10px; font-size: 0.98rem; }
+  .pub .num { color: var(--muted); margin-right: 4px; }
+  .pub .me { font-weight: bold; }
+  .pub .venue { font-style: italic; }
+  .pub a { color: var(--link); text-decoration: none; font-size: 0.9rem; }
+  .pub a:hover { text-decoration: underline; }
+
+  .skills-row { margin-bottom: 6px; }
+  .skills-row .label { font-weight: bold; }
+
+  footer {
+    margin-top: 48px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  footer a { color: var(--link); }
+
+  @media (max-width: 480px) {
+    body { padding: 32px 16px 64px; }
+    h1 { font-size: 1.7rem; }
+    .entry-head { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Yifan Wu</h1>
+  <div class="contact">
+    <a href="mailto:wu1112@engineering.upenn.edu">wu1112@engineering.upenn.edu</a>
+    <span class="sep">·</span>
+    University of Pennsylvania, GRASP Laboratory
+  </div>
+</header>
+
+<section>
+  <h2>Educational Background</h2>
+  <div class="entry">
+    <div class="entry-head">
+      <span class="org">University of Pennsylvania</span>
+      <span class="when">Sept. 2025 – present</span>
+    </div>
+    <div class="entry-sub">School of Engineering and Applied Science, Philadelphia, USA</div>
+    <div class="entry-sub">Master of Electrical and Computer Engineering</div>
+  </div>
+  <div class="entry">
+    <div class="entry-head">
+      <span class="org">ShanghaiTech University</span>
+      <span class="when">Sept. 2020 – Jun. 2024</span>
+    </div>
+    <div class="entry-sub">School of Information Science and Technology, Shanghai, China</div>
+    <div class="entry-sub">Bachelor of Engineering in Electronic and Information Engineering</div>
+  </div>
+</section>
+
+<section>
+  <h2>Research Interests</h2>
+  <p>
+    <strong>Tactile Perception and Real-Time Estimation for Contact-Rich Manipulation:</strong>
+    fabricating visuotactile sensor hardware, reconstructing contact geometry from it, and building
+    uncertainty-aware estimators and controllers that let a robot decide when partial, noisy contact
+    information is enough to act. Interested in extending this to mobile manipulation and imitation
+    learning in unstructured, contact-heavy environments such as construction and field robotics,
+    where perception is unreliable and contact is unavoidable.
+  </p>
+</section>
+
+<section>
+  <h2>Publications</h2>
+
+  <div class="pub">
+    <span class="num">[1]</span>
+    <span class="me">Yifan Wu</span>, Yuzhuo Chen, Zhengying Zhu, Xuhao Qin, and Chenxi Xiao,
+    “HumanFT: A Human-like Fingertip Multimodal Visuo-Tactile Sensor,” <span class="venue">ICRA 2025</span>.
+    <a href="https://arxiv.org/abs/2410.10353" target="_blank" rel="noopener">[Link]</a>
+  </div>
+
+  <div class="pub">
+    <span class="num">[2]</span>
+    Yining Wang, Fengxiang Tang, Boya Liu, <span class="me">Yifan Wu</span>, Ruohan Zhang, Hao Ren,
+    “A bioinspired microbial taste chip with artificial intelligence-enabled high selectivity and
+    ultra-short response time,” <span class="venue">Biosensors and Bioelectronics</span>.
+    <a href="https://doi.org/10.1016/j.bios.2025.117264" target="_blank" rel="noopener">[Link]</a>
+  </div>
+
+  <div class="pub">
+    <span class="num">[3]</span>
+    Yining Wang, Fengxiang Tang, Ruohan Zhang, <span class="me">Yifan Wu</span>, and Hao Ren,
+    “A Wireless MEMS Microbial Fuel Cell Biosensor with Record Ultra-Short Response Time for Copper
+    Ion in Water Monitoring,” <span class="venue">IEEE MEMS 2024</span>.
+    <a href="https://ieeexplore.ieee.org/document/10439400/" target="_blank" rel="noopener">[Link]</a>
+  </div>
+
+  <div class="pub">
+    <span class="num">[4]</span>
+    Chuhan Peng, Mingde Zhou, <span class="me">Yifan Wu</span>, Minfan Fu, Haoyu Wang,
+    “Adaptive Virtual Bus Strategy for Electrolytic Capacitorless DAB Microinverters,”
+    <span class="venue">IEEE Transactions on Industrial Electronics</span>.
+    <a href="https://ieeexplore.ieee.org/document/11220219/" target="_blank" rel="noopener">[Link]</a>
+  </div>
+</section>
+
+<section>
+  <h2>Research Experience</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="org">GRASP Laboratory, University of Pennsylvania</span>
+      <span class="when">Oct. 2025 – Present</span>
+    </div>
+    <div class="entry-sub">Supervised by Prof. Nadia Figueroa · Graduate Research Assistant</div>
+
+    <div class="entry-title">AMMH-Grasp: Tactile Active Exploration and Grasping of Unknown Objects <span class="entry-sub">(May 2026 – Present)</span></div>
+    <ul>
+      <li>Built a bimanual simulation pipeline where one arm reconstructs an unknown object's surface purely through touch while the other plans and executes a grasp from the evolving model.</li>
+      <li>Designed an uncertainty-aware stopping criterion and grasp-candidate selection strategy, showing reliable grasps from partial models without full exploration.</li>
+    </ul>
+
+    <div class="entry-title">Real-Time Roughness Sensing for Robotic Polishing <span class="entry-sub">(Oct. 2025 – Present)</span></div>
+    <ul>
+      <li>Built a multi-modal sensor rig and labeled dataset spanning a wide range of abrasive grit levels for closed-loop robotic polishing.</li>
+      <li>Developed a real-time roughness estimation pipeline and identified where offline benchmarks failed to predict real-world, real-time performance.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="org">ShanghaiTech Robot Interaction and Manipulation Lab</span>
+      <span class="when">Sept. 2023 – Aug. 2024</span>
+    </div>
+    <div class="entry-sub">Supervised by Prof. Chenxi Xiao · Undergraduate Research Assistant</div>
+    <div class="entry-title">HumanFT: A Human-like Fingertip Multimodal Visuo-Tactile Sensor
+      <a href="https://arxiv.org/abs/2410.10353" target="_blank" rel="noopener">[Link]</a>
+    </div>
+    <ul>
+      <li>Fabricated a compact (12 × 20 × 35 mm) multimodal fingertip sensor: custom PDMS elastomer, an integrated PCB sensing three-axis contact force and vibration, and a photometric-stereo + MLP pipeline for 3D contact reconstruction.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="org">Power Electronics and Renewable Energies Laboratory, ShanghaiTech</span>
+      <span class="when">Sept. 2024 – Oct. 2025</span>
+    </div>
+    <div class="entry-sub">Supervised by Prof. Haoyu Wang · Graduate Research Assistant</div>
+    <div class="entry-title">Adaptive Virtual Bus Strategy for Electrolytic Capacitorless DAB Microinverters
+      <a href="https://ieeexplore.ieee.org/document/11220219/" target="_blank" rel="noopener">[Link]</a>
+    </div>
+    <p>Designed and validated a 200 W quasi-single-stage DAB microinverter prototype eliminating electrolytic capacitors via active power decoupling, reaching 92.67% peak measured efficiency.</p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="org">Shanghai Engineering Research Center of Energy Efficient and Custom AI IC</span>
+      <span class="when">Feb. 2023 – Aug. 2023</span>
+    </div>
+    <div class="entry-sub">Supervised by Prof. Hao Ren · Undergraduate Research Assistant</div>
+    <div class="entry-title">Real-time Wireless Microfluidic Microbial Fuel Cell Biosensor
+      <a href="https://doi.org/10.1016/j.bios.2025.117264" target="_blank" rel="noopener">[Link 1]</a>
+      <a href="https://ieeexplore.ieee.org/document/10439400/" target="_blank" rel="noopener">[Link 2]</a>
+    </div>
+    <p>Designed a wireless microfluidic biosensor for copper-ion detection with a validated kinetic model, improving response and recovery time by 3.75× over prior designs.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Internship</h2>
+  <div class="entry">
+    <div class="entry-head">
+      <span class="org">Baidu China</span>
+      <span class="when">Jan. 2024 – Feb. 2024</span>
+    </div>
+    <div class="entry-sub">Technical Intern · Service Experience Product R&amp;D Team — large-scale multimodal LLM testing.</div>
+  </div>
+</section>
+
+<section>
+  <h2>Professional Skills</h2>
+  <div class="skills-row"><span class="label">Software:</span> C/C++, Python (NumPy, SciPy), MATLAB/Simulink, MuJoCo, ROS, PyTorch, SolidWorks, Altium</div>
+  <div class="skills-row"><span class="label">Hardware:</span> PDMS elastomer casting, photometric stereo, PCB design, STM32CubeIDE/HAL, ESP-IDF, I2C/SPI/UART</div>
+</section>
+
+<footer>
+  <a href="Yifan_Wu_CV.pdf">Download PDF version</a>
+</footer>
+
+</body>
+</html>
